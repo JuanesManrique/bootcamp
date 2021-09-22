@@ -10,7 +10,7 @@
     >
       <path
         d="M9.5 5.46097L6 8.96097L2.5 5.46097"
-        stroke="#3F3F46"
+        stroke="white"
         stroke-width="2"
         stroke-linecap="round"
         stroke-linejoin="round"
