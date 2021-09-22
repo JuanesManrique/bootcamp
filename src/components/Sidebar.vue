@@ -8,18 +8,17 @@
         flex
         justify-center
         items-center
-        h-16
-        bg-gray-50">
+        h-16">
       <Profile />
-      <p class="ml-2 text-blueGray-700">Juan Sanchez</p>
+      <p class="ml-2 text-white font-regular">Juan Sanchez</p>
     </div>
 
-    <div class="main-content flex flex-col">
+    <div class="main-content flex flex-col" style="background-color: #2B5AC4;">
       <div class="button-container flex justify-center my-8">
         <router-link
           to="/directory/destacadas"
+          style="background-color: #00E68E;"
           class="
-            bg-indigo-600
             text-white
             p-1
             rounded-lg
@@ -33,16 +32,23 @@
       </div>
       <div class="list-container">
         <ul>
-          <li v-for="item in items" :key="item.id">
+          <li>
             <router-link
-              :to="`/${item.type}/${item.id}`"
-              class="li-content flex items-center px-6 mb-4 place-content-between">
+              to="/"
+              class="li-content flex items-center px-6 mb-4 place-content-between hover:text-white"
+              style="text-decoration: none;">
               <div class="flex items-center">
-                <!-- <component :is="item.icon"></component> -->
-                <p class="ml-4 text-blueGray-600">{{item.name}}</p>
+                <Home/>
+                <p class="ml-4 text-white">Home</p>
               </div>
-              <ChevronDown v-if="item.isGroup" />
             </router-link>
+          </li>
+          <li class="li-content flex items-center px-6 mb-4 place-content-between">
+              <div class="flex items-center">
+                <CategoriasIcon/>
+                <p class="ml-4 text-white">Categorías</p>
+              </div>
+              <ChevronDown/>
           </li>
         </ul>
         <Categorias/>
@@ -51,7 +57,7 @@
       <div class="config-container max-w-full flex justify-center items-center h-16 mt-auto">
         <router-link to="/" class="flex">
           <Config />
-          <p class="ml-3 text-blueGray-700">Configuración</p>
+          <p class="ml-3 text-white">Configuración</p>
         </router-link>
       </div>
     </div>
@@ -64,6 +70,8 @@ import Profile from './icons/Profile.vue'
 import Plus from './icons/Plus.vue'
 import ChevronDown from './icons/ChevronDown.vue'
 import Config from './icons/Config.vue'
+import Home from './icons/Home.vue'
+import CategoriasIcon from './icons/Categorias.vue'
 import Categorias from './Categorias.vue'
 
 
@@ -74,7 +82,9 @@ export default {
     Plus,
     ChevronDown,
     Config,
-    Categorias
+    Categorias,
+    CategoriasIcon,
+    Home
     /* NewModules, */
   },
   data() {
@@ -85,16 +95,22 @@ export default {
         {
           id: 1,
           /* icon: "Table",  */
-          name: "Home",
-          isGroup: false,
-          type: "table",
+          name: "Educación",
         },
         {
           id: 2,
           /* icon: "App", */
-          name: "Categorías",
-          isGroup: true,
-          type: "",
+          name: "Tecnología",
+        },
+        {
+          id: 3,
+          /* icon: "App", */
+          name: "Ambiente",
+        },
+        {
+          id: 4,
+          /* icon: "App", */
+          name: "Historias",
         },
       ],
     }
@@ -113,6 +129,11 @@ export default {
   border-right: 1px solid #E5E7EB;
   display: grid;
   grid-template-rows: auto 1fr;
+  
+}
+
+.workspace {
+  background-color: #346BEB ;
 }
 
 #collapsable:checked + .sidebar {

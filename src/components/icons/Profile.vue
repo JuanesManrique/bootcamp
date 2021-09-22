@@ -6,7 +6,7 @@
         viewBox="0 0 46 48"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        class=""
+        class="rounded-full"
       >
         <rect width="46" height="48" rx="4" fill="#E2E8F0" />
         <path

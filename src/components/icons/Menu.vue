@@ -9,7 +9,7 @@
     >
       <path
         d="M4 18H20M4 6H20H4ZM4 12H20H4Z"
-        stroke="#64748A"
+        stroke="white"
         stroke-width="2"
         stroke-linecap="round"
         stroke-linejoin="round"
