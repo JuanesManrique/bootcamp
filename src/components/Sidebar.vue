@@ -38,14 +38,14 @@
               class="li-content flex items-center px-6 mb-4 place-content-between hover:text-white"
               style="text-decoration: none;">
               <div class="flex items-center">
-                <Home/>
+                <Home class="icon"/>
                 <p class="ml-4 text-white">Home</p>
               </div>
             </router-link>
           </li>
           <li class="li-content flex items-center px-6 mb-4 place-content-between">
               <div class="flex items-center">
-                <CategoriasIcon/>
+                <CategoriasIcon  class="icon"/>
                 <p class="ml-4 text-white">Categorías</p>
               </div>
               <ChevronDown/>
@@ -173,8 +173,14 @@ export default {
   #collapsable:checked + .sidebar .main-content .button-container {
     display: none;
   }
+  #collapsable:checked + .sidebar .main-content {
+    display:none;
+  }
   #collapsable:checked + .sidebar .config-container {
     display: none;
   }
+  #collapsable:checked + .sidebar .main-content .list-container .icon {
+  display: none;
+}
 }
 </style>
