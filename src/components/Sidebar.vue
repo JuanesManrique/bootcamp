@@ -166,23 +166,6 @@ export default {
 } 
 
 @media (max-width: 600px) {
-  .sidebar {
-    width: 0;
-  }
-
-  .sidebar .main-content .button-container {
-    display: none;
-  }
-  .sidebar .main-content {
-    display:none;
-  }
-  .sidebar .config-container {
-    display: none;
-  }
-  .sidebar .main-content .list-container .icon {
-  display: none;
-}
-
   #collapsable:checked + .sidebar {
     width: 0;
   }
