@@ -1,30 +1,35 @@
 <template>
-  <div class="navbar w-full h-16 px-4 py-1 border-b flex items-center">
-    <div class="content-label flex items-center">
+  <div class="navbar w-full h-16 px-4 py-1 border-b items-center">
+    <div class="content-label flex items-center mr-4">
       <label for='collapsable' class='button'><Menu /></label>
+    </div>
+    <div>
+      <Search class="search"/>
     </div>
   </div>
 </template>
 <script>
 import Menu from './icons/Menu.vue'
+import Search from './Search.vue'
 
 export default {
   name: "Navbar",
   components: {
     Menu,
+    Search
   }
 }
 </script>
-<style>
+<style scoped>
   .navbar {
+    display: grid;
+    grid-template-columns: auto 1fr;
     background-color: white;
     position: sticky;
     top: 0;
   }
 
   .content-label{
-    width: 100%;
-    height: 100%;
     transition: background-color 0.5s ease-in-out;
   }
 
@@ -33,5 +38,10 @@ export default {
     font-weight: 800;
     color: black;
     font-size: 40px;
+  }
+  @media (max-width: 768px) {
+    .search {
+      display: none;
+    }
   }
 </style>

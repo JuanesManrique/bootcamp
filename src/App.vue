@@ -2,8 +2,13 @@
   <div class="home">
     <Sidebar />
     <div class="main">
-      <Navbar />
-      <div class="main_content">
+      <div>
+        <Navbar />
+        <div class="div-search w-full py-3">
+          <Search/>
+        </div>
+      </div>
+      <div class="main_content p-4">
         <router-view />
       </div>
     </div>
@@ -13,11 +18,13 @@
 <script>
 import Sidebar from "@/components/Sidebar.vue";
 import Navbar from "@/components/Navbar.vue";
+import Search from "@/components/Search.vue";
 
 export default {
   components: {
     Sidebar,
     Navbar,
+    Search
   },
 }
 </script>
@@ -43,4 +50,24 @@ export default {
   width: 100%;
   height: 100%;
 }
+
+.div-search {
+      display: none;
+    }
+
+@media (max-width: 768px) {
+  .div-search {
+    display: flex;
+    padding-left: 24px;
+  }
+}
+
+@media (max-width: 425px) {
+  .div-search {
+    display: flex;
+    padding-left: 0px;
+    justify-content: center;
+  }
+}
+
 </style>
