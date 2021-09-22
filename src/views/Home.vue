@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-<<<<<<< HEAD
     <div class="contbody">
       <div>
         <h1>Descripcion<br><br></h1>
@@ -26,9 +25,6 @@
         publicidad
       </div>
     </div>
-=======
-    <h1>hola</h1>
->>>>>>> 98d8608a444bfc44e51901bf1432e52af8e1abf5
   </div>
 </template>
 
