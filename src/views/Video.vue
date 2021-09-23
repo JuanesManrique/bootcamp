@@ -1,93 +1,61 @@
 <template lang="">
     <div class="Video">
-        <div class="contbody">
-            <iframe width="100%" height="50%" src="https://www.youtube.com/watch?v=9IZTss4ud1k&ab_channel=GameSpot"  allowfullscreen></iframe>
+        <div class="video-container w-full flex justify-center mb-5">
+            <video class="rounded" src="https://camilo9497.github.io/videos-alcaldia/assets/21-05-20%20DON%20DANIEL.mp4" controls style="width:80%;"></video>
         </div>
-            <div class="contbody">
-                <div class="contgrid">
-                    <div>
-                        <h1>Titulo</h1>
-                    </div>
-                    <div>
-                        <h1>Fecha</h1>
-                    </div>
+        <div class="description-container mb-5">
+            <div class="">
+                <div>
+                    <h1 class="font-bold mb-4">Apoyo a la comunidad en el barrio playa rica, contrucion de espacio cultural y bilioteca</h1>
+                </div>
+                <div>
+                    <p>Use only one cookie for all transactions that are joined using a pipe ( “|” ) 
+                    symbol in order to avoid assigning a cookie to each transaction. Now, 
+                    the ongoing transaction ID will be added to this newly created transaction cookie every 
+                    time a transaction is sent to Google Analytics.</p>
+                </div>
+                
+            </div>
+            <div class="px-3">
+                <div >
+                    <h1 class="font-bold">23/09/2021</h1>
+                </div>
+                <div class="mt-4">
+                    <h1 class="font-bold">Valoracion</h1>
                 </div>
             </div>
-            <div class="contbody">
-                <div class="contgrid">
-                    <div>
-                        <h1>Descripcion</h1>
-                    </div>
-                    <div>
-                        <h1>Valoracion</h1>
-                    </div>
-                </div>
-            </div>
-            <div class="contfoot">
-                <div class="row comentarios justify-content-center">
-                    <div class="col-12">
-                        <form action="" class="form_comentarios d-flex justify-content-end flex-wrap">
-                            <textarea name="" id="" placeholder="Comentario"></textarea>
-                            <button class="btn" type="button">Subir</button>
-                        </form>
-                        <div class="media d-flex justify-content-space-betweem">
-                            <div>
-                                <img src="https://st.depositphotos.com/2218212/2938/i/600/depositphotos_29387653-stock-photo-facebook-profile.jpg" width="64" heigth="64">
-                            </div>
-                            <div class="mediabody">
-                                <p class="nombre">Neo <span>9:00am, Hoy</span></p>
-                                <br>
-                                <div class="comentario">
-                                    salio feo el comentario, muy planillado
-                                </div>
-                                <br>
-                                <div class="botones text-right">
-                                    <a href="#">Responder</a>
-                                    <a href="#">Editar</a>
-                                    <a href="#">Borrar</a>
-                                </div>
+        </div>
+        <div class="contfoot">
+            <div class="row comentarios justify-content-center">
+                <div class="col-12">
+                    <form action="" class="form_comentarios d-flex justify-content-end flex-wrap">
+                        <textarea name="" id="" placeholder="Comentario" class="rounded mb-4"></textarea>
+                        <button class="btn" type="button">Subir</button>
+                    </form>
+
+                    <div class="media">
+                        <div>
+                            <img src="https://st.depositphotos.com/2218212/2938/i/600/depositphotos_29387653-stock-photo-facebook-profile.jpg" width="64" heigth="64">
+                        </div>
+                        <div class="mediabody">
+                            <p class="nombre">Neo <span>9:00am, Hoy</span></p>
+                            
+                            <div class="comentario">
+                                salio feo el comentario, muy planillado
                             </div>
                         </div>
-                        <div class="media d-flex justify-content-space-betweem">
-                            <div>
-                                <img src="https://st.depositphotos.com/2218212/2938/i/600/depositphotos_29387653-stock-photo-facebook-profile.jpg" width="64" heigth="64">
-                            </div>
-                            <div class="mediabody">
-                                <p class="nombre">Jhon Wicht <span>10:00am, Hoy</span></p>
-                                <br>
-                                <div class="comentario">
-                                    salio feo el comentario, muy planillado
-                                </div>
-                                <br>
-                                <div class="botones text-right">
-                                    <a href="#">Responder</a>
-                                    <a href="#">Editar</a>
-                                    <a href="#">Borrar</a>
-                                </div>
-                            </div>
+                            
+                        <div class="botones">
+                            <a href="#">Responder</a>
+                            <a href="#">Editar</a>
+                            <a href="#">Borrar</a>
                         </div>
-                        <div class="media d-flex justify-content-space-betweem">
-                            <div>
-                                <img src="https://st.depositphotos.com/2218212/2938/i/600/depositphotos_29387653-stock-photo-facebook-profile.jpg" width="64" heigth="64">
-                            </div>
-                            <div class="mediabody">
-                                <p class="nombre">Constantine <span>11:00am, Hoy</span></p>
-                                <br>
-                                <div class="comentario">
-                                    salio feo el comentario, muy planillado
-                                </div>
-                                <br>
-                                <div class="botones text-right">
-                                    <a href="#">Responder</a>
-                                    <a href="#">Editar</a>
-                                    <a href="#">Borrar</a>
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 </template>
 <script>
 export default {
@@ -97,17 +65,12 @@ export default {
 }
 </script>
 <style scoped>
-.contbody {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 0px;
+
+.description-container {
+    display: grid;
+    grid-template-columns: 1fr auto;
 }
-.contgrid {
-    display: flex;
-    justify-content: space-between;
-    margin: 0%;
-    width: 100%;
-}
+
 .contfood {
     margin-bottom: 0px;
 }
@@ -115,18 +78,17 @@ export default {
     margin: 20px 0px;
 }
 .form_comentarios textarea {
-    width: 100%;
+    width: 80%;
     height: 80px;
     max-width: 100%;
     min-width: 100%;
     min-height: 80px;
     max-height: 200px;
     padding: 10px;
-    font-family: 'Roboto', sans-serif;
     line-height: 30px;
-    border: 1px solid 4b65d1;
-    margin-bottom: 20px;
-    background-color: lightblue;
+    border: 1px solid #4b65d1;
+    background-color: white;
+    outline:none;
 }
 .form_comentarios .btn {
     background: #4b65d1;
@@ -139,8 +101,11 @@ export default {
     box-shadow: 0px 0px 9px rgba(0,0,0,.35);
 }
 .media {
+    width:100%;
     border-top: 1px solid #bfbfbf;
     padding-top: 20px;
+    display: grid;
+    grid-template-columns: auto 1fr auto ;
 }
 .media img {
     margin-right: 20px;
@@ -157,10 +122,12 @@ export default {
 .mediabody .comentario {
     margin-top: 10px;
 }
-.mediabody .botones {
-    margin-bottom: 10px;
+.botones {
+    display: flex;
+    align-items: flex-end;
+    /* justify-content: flex-end; */
 }
-.mediabody .botones a {
+.botones a {
     color: #acacac;
     font-size: 14px;
     margin-left: 20px;
