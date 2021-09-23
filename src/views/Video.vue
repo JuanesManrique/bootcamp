@@ -21,7 +21,7 @@
                     <h1 class="font-bold">23/09/2021</h1>
                 </div>
                 <div class="mt-4">
-                    <h1 class="font-bold">Valoracion</h1>
+                    <Starts/>
                 </div>
             </div>
         </div>
@@ -58,9 +58,13 @@
     </div>
 </template>
 <script>
+
+import Starts from '../components/Starts.vue'
+
 export default {
     name:"Video",
     components: {
+        Starts,
     }
 }
 </script>
@@ -92,8 +96,7 @@ export default {
 }
 .form_comentarios .btn {
     background: #4b65d1;
-    font-family: 'Roboto', sans-serif;
-    border-radius: 0;
+    border-radius: 10px;
     color: #fff;
     margin-bottom: 20px;
 }
@@ -132,5 +135,6 @@ export default {
     font-size: 14px;
     margin-left: 20px;
 }
+
 </style>
-    
+     
