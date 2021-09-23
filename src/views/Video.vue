@@ -8,7 +8,7 @@
                     <div>
                         <h1>Titulo</h1>
                     </div>
-                    <div>
+                    <div> 
                         <h1>Fecha</h1>
                     </div>
                 </div>
@@ -23,6 +23,7 @@
                     </div>
                 </div>
             </div>
+           
             <div class="contfoot">
                 <div class="row comentarios justify-content-center">
                     <div class="col-12">
@@ -165,5 +166,6 @@ export default {
     font-size: 14px;
     margin-left: 20px;
 }
+
 </style>
-    
+     
