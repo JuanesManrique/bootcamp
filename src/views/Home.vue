@@ -1,60 +1,48 @@
 <template>
   <div class="home">
-    <div class="contbody">
-      <div>
-        <h1>Descripcion<br><br></h1>
+    <div class="Content">
+      <div class="flex flex-col mb-5">
+        <h1 class="font-bold mb-4" style="font-size: 22px;">Descripcion</h1>
         <p>Use only one cookie for all transactions that are joined using a pipe ( “|” ) 
           symbol in order to avoid assigning a cookie to each transaction. Now, 
           the ongoing transaction ID will be added to this newly created transaction cookie every 
           time a transaction is sent to Google Analytics.</p>
       </div>
       <div>
-        publicidad
+        <h1 class="font-bold mb-4" style="font-size: 22px;">Recientes</h1>
+        <Recientes/>
       </div>
     </div>
-    <br>
-    <div class="contbody">
-      <div>
-        <h1>Recientes</h1>
-        <a ref="#">Video Uno</a>
-        <a ref="#">Video Uno</a>
-        <a ref="#">Video Uno</a>
-        <a ref="#">Video Uno</a>
-      </div>
-      <div>
-        publicidad
-      </div>
+
+    <div class="ads">
+      
     </div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
+import Recientes from '@/components/Recientes.vue'
 
 export default {
   name: 'Home',
   components: {
-    
-  }
+    Recientes,
+  },
+  
 }
 </script>
 
 <style scoped>
-  h1 {
-    font-size: 20px;
-    font-weight: 1000;
-    width: 50%;
+  .home {
+    display:grid;
+    grid-template-columns: 70% 30%;
   }
-  p {
-    font-size: 15px;
-    width: 50%;
-  }
-  .contbody {
-    display: flex;
-    justify-content: space-between;
-    margin: 50px;
-  }
-  h2 {
-    margin: 50px;
+  
+  @media (max-width: 768px) {
+    .home {
+      display: flex;
+      flex-direction: column;
+    }
   }
 </style>
