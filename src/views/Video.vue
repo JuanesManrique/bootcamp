@@ -1,5 +1,5 @@
-<template lang="">
-    <div class="Video">
+<template >
+    <div class="Video p-4">
         <div class="video-container w-full flex justify-center mb-5">
             <video class="rounded" src="https://camilo9497.github.io/videos-alcaldia/assets/21-05-20%20DON%20DANIEL.mp4" controls style="width:80%;"></video>
         </div>
@@ -59,7 +59,7 @@
 </template>
 <script>
 
-import Starts from '@/components/Starts.vue'
+import Starts from '../components/Starts.vue'
 
 export default {
     name:"Video",
@@ -69,6 +69,7 @@ export default {
 }
 </script>
 <style scoped>
+
 
 .description-container {
     display: grid;
