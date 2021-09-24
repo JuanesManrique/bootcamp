@@ -1,7 +1,7 @@
 <template lang="">
     <div class="Video">
         <div class="video-container w-full flex justify-center mb-5">
-            <video class="rounded" src="https://camilo9497.github.io/videos-alcaldia/assets/21-05-20%20DON%20DANIEL.mp4" controls style="width:80%;"></video>
+            <video class="rounded" src="https://camilo9497.github.io/videos-alcaldia/assets/21-05-20%20DON%20DANIEL.mp4"></video>
         </div>
         <div class="description-container mb-5">
             <div class="">
@@ -137,4 +137,3 @@ export default {
 }
 
 </style>
-     

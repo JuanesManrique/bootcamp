@@ -1,12 +1,12 @@
 <template lang="">
     <div class="Video">
         <div class="video-container w-full flex justify-center mb-5">
-            <video class="rounded" src="https://camilo9497.github.io/videos-alcaldia/assets/21-05-20%20DON%20DANIEL.mp4" controls style="width:80%;"></video>
+            <video class="rounded" src="https://camilo9497.github.io/videos-alcaldia/assets/21-05-27%20DIANA%20SARMIENTO%20UBUNTU.mp4" controls style="width:80%;"></video>
         </div>
         <div class="description-container mb-5">
             <div class="">
                 <div>
-                    <h1 class="font-bold mb-4">Apoyo a la comunidad en el barrio playa rica, contrucion de espacio cultural y bilioteca</h1>
+                    <h1 class="font-bold mb-4">Fundaciom Ubuntu, Apoyo a la comunidad</h1>
                 </div>
                 <div>
                     <p>Use only one cookie for all transactions that are joined using a pipe ( “|” ) 
@@ -137,4 +137,3 @@ export default {
 }
 
 </style>
-     
