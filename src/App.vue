@@ -8,7 +8,7 @@
           <Search/>
         </div>
       </div>
-      <div class="main_content p-4">
+      <div class="main_content">
         <router-view />
       </div>
     </div>
@@ -47,6 +47,7 @@ export default {
   }
 
 .main_content {
+  padding: 0;
   width: 100%;
   height: 100%;
 }

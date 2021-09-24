@@ -9,11 +9,26 @@
         justify-center
         items-center
         h-16">
-        <img src="../assets/logoVillavicencio.png" alt="" style="width:70%;">
+      <Profile />
+      <p class="ml-2 text-white font-regular">Juan Sanchez</p>
     </div>
 
-    <div class="main-content flex flex-col rounded-r py-4" style="background-color: #2B5AC4;">
-      <div class="button-container flex justify-center">
+    <div class="main-content flex flex-col" style="background-color: #2B5AC4;">
+      <div class="button-container flex justify-center my-8">
+        <router-link
+          to="/directory/destacadas"
+          style="background-color: #00E68E;"
+          class="
+            text-white
+            p-1
+            rounded-lg
+            flex
+            items-center
+            w-4/5
+            place-content-around">
+          <p>Nuevo</p>
+          <Plus />
+        </router-link>
       </div>
       <div class="list-container">
         <ul>
@@ -38,6 +53,12 @@
         </ul>
         <Categorias/>
         <!-- <NewModules /> -->
+      </div>
+      <div class="config-container max-w-full flex justify-center items-center h-16 mt-auto">
+        <router-link to="/" class="flex">
+          <Config />
+          <p class="ml-3 text-white">Configuración</p>
+        </router-link>
       </div>
     </div>
   </div>
@@ -105,13 +126,14 @@ export default {
   position: sticky;
   top: 0;
   transition: 0.3s;
+  border-right: 1px solid #E5E7EB;
   display: grid;
   grid-template-rows: auto 1fr;
   
 }
 
 .workspace {
-  background-color: white ;
+  background-color: #346BEB ;
 }
 
 #collapsable:checked + .sidebar {
