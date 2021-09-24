@@ -25,26 +25,14 @@ export default {
         {
           id: 1,
           /* icon: "Table",  */
-          name: "Educación",
-          path: ""
+          name: "Historia",
+          path: "/categorias/historia"
         },
         {
           id: 2,
           /* icon: "App", */
-          name: "Tecnología",
-          path: ""
-        },
-        {
-          id: 3,
-          /* icon: "App", */
-          name: "Ambiente",
-          path: ""
-        },
-        {
-          id: 4,
-          /* icon: "App", */
-          name: "Historias",
-          path: ""
+          name: "Comunidad",
+          path: "/categorias/comunidad"
         },
       ],
     }
