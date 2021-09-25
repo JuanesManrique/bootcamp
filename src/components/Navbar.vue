@@ -39,6 +39,10 @@ export default {
     top: 0;
   }
 
+  .search-container {
+      margin-left: 70px;
+    }
+
   .navbar2 {
     width: 100%;
     display:grid;
