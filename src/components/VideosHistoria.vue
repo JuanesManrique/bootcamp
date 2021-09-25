@@ -51,7 +51,7 @@ export default {
               "url": "https://camilo9497.github.io/videos-alcaldia/assets/21-08-11%20RESUMEN%20LA%20CIUDAD%20CAMBIA%20CONTIGO.mp4",
               "name": "Historias de ciudad, presentacion general de los videos ",
               "path": "/categorias/historia/4"
-          }
+          },
       ]
     }
   },

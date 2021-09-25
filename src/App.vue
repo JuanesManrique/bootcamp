@@ -20,6 +20,7 @@ import Navbar from "@/components/Navbar.vue";
 import Search from "@/components/Search.vue";
 import Footer from "@/components/Footer.vue";
 
+
 export default {
   components: {
     Sidebar,
@@ -38,6 +39,8 @@ export default {
   font-family: 'Poppins', sans-serif;
 }
 .home {
+    width: 100%;
+  height: 100%;
     display: grid;
     grid-template-columns: auto 1fr;
   }
@@ -48,7 +51,7 @@ export default {
   }
 
 .main_content {
-  padding: 30px 50px 0 70px;
+  padding: 30px 30px 0 70px;
   width: 100%;
   height: 100%;
 }

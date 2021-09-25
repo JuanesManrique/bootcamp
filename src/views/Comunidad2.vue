@@ -1,7 +1,7 @@
 <template lang="">
     <div class="Video p-4">
         <div class="video-container w-full flex justify-center mb-3">
-            <video class="rounded" src="https://camilo9497.github.io/videos-alcaldia/assets/21-05-27%20DIANA%20SARMIENTO%20UBUNTU.mp4" controls style="width:80%;"></video>
+            <video class="rounded" src="https://camilo9497.github.io/videos-alcaldia/assets/21-05-27%20DIANA%20SARMIENTO%20UBUNTU.mp4" controls ></video>
         </div>
         <div class="description-container mb-5">
             <div class="">
@@ -33,19 +33,20 @@
                         <button class="btn" type="button">Subir</button>
                     </form>
 
-                    <div class="media">
-                        <div>
-                            <img src="https://st.depositphotos.com/2218212/2938/i/600/depositphotos_29387653-stock-photo-facebook-profile.jpg" width="64" heigth="64">
-                        </div>
-                        <div class="mediabody">
-                            <p class="nombre">Neo <span>9:00am, Hoy</span></p>
-                            
-                            <div class="comentario">
-                                salio feo el comentario, muy planillado
+                    <div class=" flex flex-col">
+                        <div class="media">
+                            <div>
+                                <img src="https://st.depositphotos.com/2218212/2938/i/600/depositphotos_29387653-stock-photo-facebook-profile.jpg" width="64" heigth="64">
+                            </div>
+                            <div class="mediabody">
+                                <p class="nombre">Neo <span>9:00am, Hoy</span></p>
+                                
+                                <div class="comentario">
+                                    salio feo el comentario, muy planillado
+                                </div>
                             </div>
                         </div>
-                            
-                        <div class="botones">
+                        <div class="botones mt-3">
                             <a href="#">Responder</a>
                             <a href="#">Editar</a>
                             <a href="#">Borrar</a>
@@ -69,6 +70,15 @@ export default {
 }
 </script>
 <style scoped>
+.video-container video {
+  width: 80%;
+  }
+
+@media (max-width: 768px) {
+  .video-container video {
+  width: 100%;
+  }
+}
 
 .description-container {
         display: flex;
