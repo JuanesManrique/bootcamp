@@ -62,6 +62,7 @@
 import Starts from '../components/Starts.vue'
 
 export default {
+    
     name:"Historia2",
     components: {
         Starts,
