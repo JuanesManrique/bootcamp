@@ -59,7 +59,7 @@
 </template>
 <script>
 
-import Starts from '../components/Starts.vue'
+import Starts from '@/components/Starts.vue'
 
 export default {
     name:"Historia1",
