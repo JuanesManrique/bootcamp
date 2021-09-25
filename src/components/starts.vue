@@ -21,9 +21,9 @@ export default {
     /* position: absolute; */
     direction: rtl;
 }.box a{
-    /* font-size: 35px;
+    font-size: 35px;
     color:#313131;
-    transition: 0.3s all;*/
+    transition: 0.3s all;
 }
  .box a:hover{
      color:#f1c40f;

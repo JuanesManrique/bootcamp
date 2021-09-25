@@ -1,12 +1,12 @@
 <template >
-    <div class="Video p-4">
+    <div class="Video pl-10">
         <div class="video-container w-full flex justify-center mb-5">
-            <video class="rounded" src="https://camilo9497.github.io/videos-alcaldia/assets/21-05-20%20DON%20DANIEL.mp4" controls style="width:80%;"></video>
+            <video class="rounded" src="https://camilo9497.github.io/videos-alcaldia/assets/21-05-20%20DON%20DANIEL.mp4" controls style="width:90%;"></video>
         </div>
         <div class="description-container mb-5">
             <div class="">
                 <div>
-                    <h1 class="font-bold mb-4">Apoyo a la comunidad en el barrio playa rica, contrucion de espacio cultural y bilioteca</h1>
+                    <h1 class="font-bold mb-4" style="font-size: 22px;">Apoyo a la comunidad en el barrio playa rica, contrucion de espacio cultural y bilioteca</h1>
                 </div>
                 <div>
                     <p>Use only one cookie for all transactions that are joined using a pipe ( “|” ) 
@@ -16,8 +16,8 @@
                 </div>
                 
             </div>
-            <div class="px-3">
-                <div >
+            <div class="px-3 flex flex-col justify-center">
+                <div class="flex justify-end">
                     <h1 class="font-bold">23/09/2021</h1>
                 </div>
                 <div class="mt-4">
@@ -41,7 +41,7 @@
                             <p class="nombre">Neo <span>9:00am, Hoy</span></p>
                             
                             <div class="comentario">
-                                salio feo el comentario, muy planillado
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas accusamus labore nostrum natus officia explicabo ipsa ut dolor sequi rem doloremque, ipsum vitae iure quos facere, velit commodi atque sapiente?</p>
                             </div>
                         </div>
                             
@@ -70,10 +70,12 @@ export default {
 </script>
 <style scoped>
 
+.video {
+}
 
 .description-container {
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 70% 30%;
 }
 
 .contfood {

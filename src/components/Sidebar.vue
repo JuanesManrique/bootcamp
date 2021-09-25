@@ -1,26 +1,19 @@
 <template>
   <input type='checkbox' id='collapsable' class="hidden">
   <div class="sidebar">
-    <div
-      class="
-        workspace
-        max-w-full
-        flex
-        justify-center
-        items-center
-        h-16">
-        <img src="../assets/logoVillavicencio.png" alt="" style="width:70%;">
-    </div>
-
-    <div class="main-content flex flex-col rounded-r py-4" style="background-color: #2B5AC4;">
-      <div class="button-container flex justify-center">
+    <div class="main-content flex flex-col rounded-r py-4 px-6" style="background-color: #2B5AC4; height:100vh;">
+      <div class="content-label mb-4 ">
+        <label for='collapsable' class='button cursor-pointer'><Menu /></label>
       </div>
       <div class="list-container">
+        <!-- <div class="logo-content justify-center"> 
+          <img src="../assets/logoVillavicencio.png" alt="" style="width:70%;">
+        </div> -->
         <ul>
           <li>
             <router-link
               to="/"
-              class="li-content flex items-center px-6 mb-4 place-content-between hover:text-white"
+              class="li-content flex items-center mb-4 place-content-between hover:text-white"
               style="text-decoration: none;">
               <div class="flex items-center">
                 <Home class="icon"/>
@@ -28,7 +21,7 @@
               </div>
             </router-link>
           </li>
-          <li class="li-content flex items-center px-6 mb-4 place-content-between">
+          <li class="li-content flex items-center mb-4 place-content-between">
               <div class="flex items-center">
                 <CategoriasIcon  class="icon"/>
                 <p class="ml-4 text-white">Categorías</p>
@@ -45,6 +38,7 @@
 
 <script>
 
+import Menu from './icons/Menu.vue'
 import Profile from './icons/Profile.vue'
 import Plus from './icons/Plus.vue'
 import ChevronDown from './icons/ChevronDown.vue'
@@ -57,6 +51,7 @@ import Categorias from './Categorias.vue'
 export default {
   name: "Sidebar",
   components: {
+    Menu,
     Profile,
     Plus,
     ChevronDown,
@@ -99,15 +94,27 @@ export default {
 </script>
 
 <style>
+
+.content-label{
+    transition: background-color 0.5s ease-in-out;
+  }
+
+
 .sidebar {
+  z-index: 101;
   width: 250px;
   height: 100vh;
-  position: sticky;
-  top: 0;
+  position: fixed;
+  top: 62px;
   transition: 0.3s;
   display: grid;
   grid-template-rows: auto 1fr;
+  box-shadow: 10px 0px 20px -9px rgba(66,66,66,1);
   
+}
+
+.logo-content {
+  display: flex;
 }
 
 .workspace {
@@ -116,6 +123,7 @@ export default {
 
 #collapsable:checked + .sidebar {
   width: 60px;
+  
 }
 
 #collapsable:checked + .sidebar .chevron-down {
@@ -124,6 +132,12 @@ export default {
 
 #collapsable:checked + .sidebar .workspace p {
   display: none;
+}
+
+#collapsable:checked + .sidebar .main-content .content-label{
+  display: flex;
+  justify-content: center;
+  transition: background-color 0.5s ease-in-out;
 }
 
 #collapsable:checked + .sidebar .main-content .button-container p {
@@ -143,10 +157,29 @@ export default {
   display: none;
 } 
 
-@media (max-width: 600px) {
+/* @media (min-width: 768) {
+
+  .sidebar {
+    top: 60px;
+  }
+  
+} */
+
+@media (max-width: 768px) {
+  .content-label {
+    display: none;
+  }
+  .search-container {
+    display: none;
+  }
+
   #collapsable:checked + .sidebar {
     width: 0;
   }
+
+  #collapsable:checked + .sidebar .workspace .logo-content {
+  display: none;
+}
 
   #collapsable:checked + .sidebar .main-content .button-container {
     display: none;

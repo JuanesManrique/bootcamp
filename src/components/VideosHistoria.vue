@@ -19,43 +19,35 @@
 
 <script>
 
+
+
 export default {
-  name: "Recientes",
+  name: "VideosHistoria",
   components: {
   },
   data() {
     return {
       items: [
-        {
-          id: 1,
-          name: 'Apoyo a la comunidad en el barrio playa rica, contrucion de espacio cultural y bilioteca',
-          url: 'https://camilo9497.github.io/videos-alcaldia/assets/21-05-20%20DON%20DANIEL.mp4'
-        },
-        {
-          id: 2,
-          name: 'Fundaciom Ubuntu, Apoyo a la comunidad',
-          url: "https://camilo9497.github.io/videos-alcaldia/assets/21-05-27%20DIANA%20SARMIENTO%20UBUNTU.mp4",
-        },
-        {
-          id: 3,
-          name: 'Fundaciom Ubuntu, Apoyo a la comunidad',
-          url: "https://camilo9497.github.io/videos-alcaldia/assets/21-05-27%20DIANA%20SARMIENTO%20UBUNTU.mp4",
-        },
-        {
-          id: 4,
-          name: 'Fundaciom Ubuntu, Apoyo a la comunidad',
-          url: "https://camilo9497.github.io/videos-alcaldia/assets/21-05-27%20DIANA%20SARMIENTO%20UBUNTU.mp4",
-        },
-        {
-          id: 5,
-          name: 'Fundaciom Ubuntu, Apoyo a la comunidad',
-          url: "https://camilo9497.github.io/videos-alcaldia/assets/21-05-27%20DIANA%20SARMIENTO%20UBUNTU.mp4",
-        },
-        {
-          id: 6,
-          name: 'Fundaciom Ubuntu, Apoyo a la comunidad',
-          url: "https://camilo9497.github.io/videos-alcaldia/assets/21-05-27%20DIANA%20SARMIENTO%20UBUNTU.mp4",
-        },
+          {
+              "id": 1,
+              "url": "https://camilo9497.github.io/videos-alcaldia/assets/21-07-15%20MISTER%20Luis%20Ve%CC%81lez.mp4",
+              "name": "Historias de ciudad, ejemplo de superacion y revinculacion en la sociedad"
+          },
+          {
+              "id": 2,
+              "url": "https://camilo9497.github.io/videos-alcaldia/assets/21-06-29%20HISTORIA%20AJEDREZ.mp4",
+              "name": "Cultura e historia  en la ciudad, espacios de vinculacion ajedrez en el parque central"
+          },
+          {
+              "id": 3,
+              "url": "https://camilo9497.github.io/videos-alcaldia/assets/21-07-07%20LA%20CIUDAD%20CAMBIA%20CONTIGO%20SALOME.mp4",
+              "name": "Cultura ambuiental en la ciudad "
+          },
+          {
+              "id": 4,
+              "url": "https://camilo9497.github.io/videos-alcaldia/assets/21-08-11%20RESUMEN%20LA%20CIUDAD%20CAMBIA%20CONTIGO.mp4",
+              "name": "Historias de ciudad, presentacion general de los videos "
+          }
       ]
     }
   },

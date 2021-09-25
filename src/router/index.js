@@ -20,6 +20,26 @@ const routes = [{
         name: 'Historia',
         component: Historia
     },
+    {
+        path: '/categorias/historia/1',
+        name: 'Historia1',
+        component: Historia1
+    },
+    {
+        path: '/categorias/historia/2',
+        name: 'Historia2',
+        component: Historia2
+    },
+    {
+        path: '/categorias/historia/3',
+        name: 'Historia3',
+        component: Historia3
+    },
+    {
+        path: '/categorias/historia/4',
+        name: 'Historia4',
+        component: Historia4
+    },
 
     {
         path: '/categorias/comunidad',

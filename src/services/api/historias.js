@@ -9,7 +9,7 @@ const fetch = (mockData, time = 0) => {
 }
 
 const historiasApi = {
-    getProductos() {
+    getHistorias() {
         return fetch(historias, 500)
     }
 }

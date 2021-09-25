@@ -9,7 +9,7 @@ const fetch = (mockData, time = 0) => {
 }
 
 const comunidadApi = {
-    getProductos() {
+    getComunidad() {
         return fetch(comunidad, 500)
     }
 }
