@@ -1,6 +1,6 @@
 <template>
   <div class="row mb-10">
-    <router-link to="/" v-for="item in items" :key="item.id" class="col-12 col-sm-6 col-md-4 col-lg-3 cursor-pointer mb-4" >
+    <router-link :to="item.path" v-for="item in items" :key="item.id" class="col-12 col-sm-6 col-md-4 col-lg-3 cursor-pointer mb-4" >
       <div class="grid" style="grid-template-rows: 1fr auto">
         <div class="video flex justify-center items-center position-relativa">
           <video class="imagen" :src="item.url"></video>
@@ -19,43 +19,39 @@
 
 <script>
 
+
+
 export default {
-  name: "Recientes",
+  name: "VideosHistoria",
   components: {
   },
   data() {
     return {
       items: [
-        {
-          id: 1,
-          name: 'Apoyo a la comunidad en el barrio playa rica, contrucion de espacio cultural y bilioteca',
-          url: 'https://camilo9497.github.io/videos-alcaldia/assets/21-05-20%20DON%20DANIEL.mp4'
-        },
-        {
-          id: 2,
-          name: 'Fundaciom Ubuntu, Apoyo a la comunidad',
-          url: "https://camilo9497.github.io/videos-alcaldia/assets/21-05-27%20DIANA%20SARMIENTO%20UBUNTU.mp4",
-        },
-        {
-          id: 3,
-          name: 'Fundaciom Ubuntu, Apoyo a la comunidad',
-          url: "https://camilo9497.github.io/videos-alcaldia/assets/21-05-27%20DIANA%20SARMIENTO%20UBUNTU.mp4",
-        },
-        {
-          id: 4,
-          name: 'Fundaciom Ubuntu, Apoyo a la comunidad',
-          url: "https://camilo9497.github.io/videos-alcaldia/assets/21-05-27%20DIANA%20SARMIENTO%20UBUNTU.mp4",
-        },
-        {
-          id: 5,
-          name: 'Fundaciom Ubuntu, Apoyo a la comunidad',
-          url: "https://camilo9497.github.io/videos-alcaldia/assets/21-05-27%20DIANA%20SARMIENTO%20UBUNTU.mp4",
-        },
-        {
-          id: 6,
-          name: 'Fundaciom Ubuntu, Apoyo a la comunidad',
-          url: "https://camilo9497.github.io/videos-alcaldia/assets/21-05-27%20DIANA%20SARMIENTO%20UBUNTU.mp4",
-        },
+          {
+              "id": 1,
+              "url": "https://camilo9497.github.io/videos-alcaldia/assets/21-05-20%20DON%20DANIEL.mp4",
+              "name": "Apoyo a la comunidad en el barrio playa rica, contrucion de espacio cultural y bilioteca",
+              "path": "/categorias/comunidad/1"
+          },
+          {
+              "id": 2,
+              "url": "https://camilo9497.github.io/videos-alcaldia/assets/21-05-27%20DIANA%20SARMIENTO%20UBUNTU.mp4",
+              "name": "Fundaciom Ubuntu, Apoyo a la comunidad",
+              "path": "/categorias/comunidad/2"
+          },
+          {
+              "id": 3,
+              "url": "https://camilo9497.github.io/videos-alcaldia/assets/21-06-01%20HISTORIA%20VICTOR%20SANTA%20F%C3%89.mp4",
+        "name": "Apoyo a la comunidad barrio Santa fe, aprendizaje de ornamentacion y soldadura",
+              "path": "/categorias/comunidad/3"
+          },
+          {
+              "id": 4,
+              "url": "https://camilo9497.github.io/videos-alcaldia/assets/21-06-10%20YEISON%20EL%20PAPI.mp4",
+              "name": "Labor social en la comunidad barrio brisas del guatiquia, recreacion para niños",
+              "path": "/categorias/comunidad/4"
+          }
       ]
     }
   },

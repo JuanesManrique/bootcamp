@@ -1,6 +1,6 @@
 <template>
   <div class="row mb-10">
-    <router-link to="/" v-for="item in items" :key="item.id" class="col-12 col-sm-6 col-md-4 col-lg-3 cursor-pointer mb-4" >
+    <router-link :to="item.path" v-for="item in items" :key="item.id" class="col-12 col-sm-6 col-md-4 col-lg-3 cursor-pointer mb-4" >
       <div class="grid" style="grid-template-rows: 1fr auto">
         <div class="video flex justify-center items-center position-relativa">
           <video class="imagen" :src="item.url"></video>
@@ -31,22 +31,26 @@ export default {
           {
               "id": 1,
               "url": "https://camilo9497.github.io/videos-alcaldia/assets/21-07-15%20MISTER%20Luis%20Ve%CC%81lez.mp4",
-              "name": "Historias de ciudad, ejemplo de superacion y revinculacion en la sociedad"
+              "name": "Historias de ciudad, ejemplo de superacion y revinculacion en la sociedad",
+              "path": "/categorias/historia/1"
           },
           {
               "id": 2,
               "url": "https://camilo9497.github.io/videos-alcaldia/assets/21-06-29%20HISTORIA%20AJEDREZ.mp4",
-              "name": "Cultura e historia  en la ciudad, espacios de vinculacion ajedrez en el parque central"
+              "name": "Cultura e historia  en la ciudad, espacios de vinculacion ajedrez en el parque central",
+              "path": "/categorias/historia/2"
           },
           {
               "id": 3,
               "url": "https://camilo9497.github.io/videos-alcaldia/assets/21-07-07%20LA%20CIUDAD%20CAMBIA%20CONTIGO%20SALOME.mp4",
-              "name": "Cultura ambuiental en la ciudad "
+              "name": "Cultura ambuiental en la ciudad ",
+              "path": "/categorias/historia/3"
           },
           {
               "id": 4,
               "url": "https://camilo9497.github.io/videos-alcaldia/assets/21-08-11%20RESUMEN%20LA%20CIUDAD%20CAMBIA%20CONTIGO.mp4",
-              "name": "Historias de ciudad, presentacion general de los videos "
+              "name": "Historias de ciudad, presentacion general de los videos ",
+              "path": "/categorias/historia/4"
           }
       ]
     }

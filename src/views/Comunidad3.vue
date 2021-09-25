@@ -1,12 +1,12 @@
 <template lang="">
-    <div class="Video">
-        <div class="video-container w-full flex justify-center mb-5">
+    <div class="Video p-4">
+        <div class="video-container w-full flex justify-center mb-3">
             <video class="rounded" src="https://camilo9497.github.io/videos-alcaldia/assets/21-06-01%20HISTORIA%20VICTOR%20SANTA%20F%C3%89.mp4" controls style="width:80%;"></video>
         </div>
         <div class="description-container mb-5">
             <div class="">
                 <div>
-                    <h1 class="font-bold mb-4">Apoyo a la comunidad barrio Santa fe, aprendizaje de ornamentacion y soldadura</h1>
+                    <h1 class="font-bold mb-4" style="font-size: 20px; color: #2B5AC4;">Apoyo a la comunidad barrio Santa fe, aprendizaje de ornamentacion y soldadura</h1>
                 </div>
                 <div>
                     <p>Use only one cookie for all transactions that are joined using a pipe ( “|” ) 
@@ -16,11 +16,11 @@
                 </div>
                 
             </div>
-            <div class="px-3">
-                <div >
+            <div class="fecha-estrella-container px-3">
+                <div class="fecha">
                     <h1 class="font-bold">23/09/2021</h1>
                 </div>
-                <div class="mt-4">
+                <div class="strats">
                     <Starts/>
                 </div>
             </div>
@@ -71,10 +71,16 @@ export default {
 <style scoped>
 
 .description-container {
-    display: grid;
-    grid-template-columns: 1fr auto;
-}
+        display: flex;
+        flex-direction: column-reverse;
+    }
 
+    .fecha-estrella-container {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 .contfood {
     margin-bottom: 0px;
 }
